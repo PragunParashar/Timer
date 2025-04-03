@@ -1,7 +1,9 @@
 import time
+# take user input
 hours = int(input('Enter the number of Hours: '))
 minutes = int(input('Enter the number of Minutes: '))
 seconds = int(input('Enter the number of Seconds: '))
+# convert time into seconds
 seconds += (hours * 3600 + minutes * 60) 
 while seconds >= 0:
     print (f'Hours: {seconds//3600:02} , Minutes: {(seconds%3600)//60:02} , Seconds: {(seconds%3600)%60:02}')
